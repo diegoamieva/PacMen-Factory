@@ -50,7 +50,7 @@ This repository contains the exercise of week 7 of MITxPRO Professional Certific
 
 ## :sparkles: Roadmap ##
 
-FUTURE IMPROVEMENTS
+FUTURE IMPROVEMENTS\
 :heavy_check_mark: Improvement 1: Make PacMen open and close their mouth when moving.\
 :heavy_check_mark: Improvement 2:Make PacMen change image direction in each collision.\
 :heavy_check_mark: Improvement 3: Each PacMen created will have a different color.
