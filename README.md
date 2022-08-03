@@ -48,25 +48,22 @@
 
 This repository contains the exercise of week 7 of MITxPRO Professional Certificate in Programming: Full-Stack Development with MERN.
 
-## :sparkles: Features ##
+## :sparkles: Roadmap of future improvements ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Improvement 1: Make PacMen open and close their mouth when moving.\
+:heavy_check_mark: Improvement 2:Make PacMen change image direction in each collision.\
+:heavy_check_mark: Improvement 3: Each PacMen created will have a different color.
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [HTML]
+- [JavaScript]
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Visual Studio Code](https://code.visualstudio.com) installed.
 
 ## :checkered_flag: Starting ##
 
@@ -74,16 +71,13 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 # Clone this project
 $ git clone https://github.com/diegoamieva/pacmen-factory
 
-# Access
-$ cd pacmen-factory
+Open Visual Studio Code
 
-# Install dependencies
-$ yarn
+Drag index.html to your browser
 
-# Run the project
-$ yarn start
+Click Add PacMan button 
 
-# The server will initialize in the <http://localhost:3000>
+Click Start Game
 ```
 
 ## :memo: License ##
