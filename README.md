@@ -59,8 +59,8 @@ FUTURE IMPROVEMENTS\
 
 The following tools were used in this project:
 
-- [HTML]
-- [JavaScript]
+- HTML
+- JavaScript
 
 ## :white_check_mark: Requirements ##
 
