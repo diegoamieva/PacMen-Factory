@@ -19,7 +19,8 @@ function makePac() {
   // returns an object with random values scaled {x: 33, y: 21}
   let velocity = setToRandom(10); // {x:?, y:?}
   let position = setToRandom(200);
-
+  let direction = 0;
+  let focus = 0;
   // Add image to div id = game
   let game = document.getElementById('game');
   let newimg = document.createElement('img');
@@ -38,16 +39,19 @@ function makePac() {
     position,
     velocity,
     newimg,
-  };
+    direction,
+    focus
+  }
 }
 
 function update() {
-  // loop over pacmen array and move each one and move image in DOM
+  // Loop over pacmen array and move each one and move image in DOM
   pacMen.forEach((item) => {
+    item.focus = (item.focus + 1) % 2;
+    item.newimg.src = pacArray[item.direction][item.focus];
     checkCollisions(item);
     item.position.x += item.velocity.x;
     item.position.y += item.velocity.y;
-
     item.newimg.style.left = item.position.x;
     item.newimg.style.top = item.position.y;
   });
@@ -55,13 +59,16 @@ function update() {
 }
 
 function checkCollisions(item) {
-  // TODO: detect collision with all walls and make pacman bounce
+  // Detect collision with all walls and make pacman bounce
   if(item.position.x + item.velocity.x +item.newimg.width > window.innerWidth || 
-      item.position.x + item.velocity.x < 0) item.velocity.x = -item.velocity.x;
+      item.position.x + item.velocity.x < 0){
+        item.velocity.x = -item.velocity.x;
+        item.direction = (item.direction + 1) % 2;
+      } 
   if(item.position.y + item.velocity.y +item.newimg.height > window.innerHeight || 
       item.position.y + item.velocity.y < 0) item.velocity.y = -item.velocity.y;
 }
 
 function makeOne() {
-  pacMen.push(makePac()); // add a new PacMan
+  pacMen.push(makePac()); // Add a new PacMan
 }
