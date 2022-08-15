@@ -1,0 +1,18 @@
+footer {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    color: white;
+  }
+  
+    footer>a, footer>p {
+    margin: auto 0;
+  }
+  
+  footer>p>a {
+    text-decoration: none;
+  }
+  
