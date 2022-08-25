@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-This repository contains the exercise of week 7 of MITxPRO Professional Certificate in Programming: Full-Stack Development with MERN.
+This repository contains the exercise of week 7 of MITxPRO Professional Certificate in Programming: Full-Stack Development with MERN.This program generates n numbers of Pacmans and move them around the window.
 
 ## :sparkles: Roadmap ##
 
